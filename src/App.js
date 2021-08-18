@@ -1,20 +1,22 @@
-import React from 'react';
-import './App.css';
-import Controls from './component/Controls';
-import GridBoard from './component/GridBoard';
-import NextBlock from './component/NextBlock';
-import ScoreBoard from "./component/ScoreBoard"
+import React from "react";
+import "./App.css";
+import Controls from "./component/Controls";
+import GridBoard from "./component/GridBoard";
+import NextBlock from "./component/NextBlock";
+import ScoreBoard from "./component/ScoreBoard";
+import MessagePopup from "./component/MessagePopup";
 
 function App() {
   return (
     <div className="App">
-         <header className="App-header">
+      <header className="App-header">
         <h1 className="App-title">Tetris Redux</h1>
       </header>
-      <GridBoard/>
-      <NextBlock/>
+      <GridBoard />
+      <NextBlock />
       <ScoreBoard />
-      <Controls/>
+      <Controls />
+      <MessagePopup />
     </div>
   );
 }
