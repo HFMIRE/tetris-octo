@@ -14,11 +14,12 @@
   /* Defines three rows of `100px`, `--grid-height`, and 100px. */
   grid-template-rows: 100px var(--grid-height) 100px;
 
-/* This defines the areas on the grid with names: 'h', 'l', 'c', 'r',
+  /* This defines the areas on the grid with names: 'h', 'l', 'c', 'r',
 and 'b'. The '.' represents an empty cell on the grid. */
-  grid-template-areas: "h h h"
-                       "l c r"
-                       ". b .";
+  grid-template-areas:
+    "h h h"
+    "l c r"
+    ". b .";
 }
 
 html {
@@ -41,12 +42,11 @@ html {
   color: white;
 }
 
-
 :root {
   --bg-color: rgba(150, 150, 150, 1);
 
   /* Border Colors are all transparent colors. These will tint or shade the background color of the square. */
-  --border-left-color: rgba(255, 255, 255, 0.20);
+  --border-left-color: rgba(255, 255, 255, 0.2);
   --border-top-color: rgba(255, 255, 255, 0.33);
   --border-right-color: rgba(0, 0, 0, 0.15);
   --border-bottom-color: rgba(0, 0, 0, 0.5);
@@ -138,7 +138,7 @@ html {
 }
 
 /* Score Board */
-.score-board-button {
+/* .score-board-button {
   display: block;
   padding: 1em;
   border-width: 5px;
@@ -146,4 +146,11 @@ html {
   border-left-color: var(--button-color-l);
   border-right-color: var(--button-color-r);
   border-bottom-color: var(--button-color-b);
+} */
+
+/* controls */
+.controls {
+  grid-area: b;
+  display: flex;
+  flex-direction: row;
 }
