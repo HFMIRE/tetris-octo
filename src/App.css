@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 }
+html {
+  height: 100%;
+}
 
+* {
+  box-sizing: border-box;
+}
+.grid-board {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
+}
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
